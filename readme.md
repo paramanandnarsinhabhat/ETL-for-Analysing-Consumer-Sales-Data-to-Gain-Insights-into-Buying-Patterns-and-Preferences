@@ -27,8 +27,12 @@ To run this project, you need to have Python installed on your system. It's reco
 
 ## File Structure
 - `data/SalesJan2009.csv`: The raw sales data file.
-- `etl.py`: The main Python script for the ETL process.
-- `requirements.txt`: Required Python libraries.
+- data/data_extraction : Contains the script for data extraction
+- Run the script:
+ python extract.py
+
+
+
 
 ## How to Run
 1. Ensure you are in the project directory.
