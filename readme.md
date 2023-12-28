@@ -2,7 +2,7 @@
 # ETL Pipeline for Sales Data Analysis
 
 ## Overview
-This project constructs an ETL (Extract, Transform, Load) pipeline in Python, designed to process and analyze sales data from January 2009. The pipeline streamlines the workflow of extracting data from a CSV file, cleansing and standardizing it through transformation, and finally loading the processed data into a SQLite database for comprehensive analysis.
+This project constructs an ETL (Extract, Transform, Load) pipeline in Python, designed to process and analyze sales data from January 2009. The pipeline streamlines the workflow of extracting data from a CSV file, cleansing and standardizing it through transformation, and finally loading the processed data into a SQL database for comprehensive analysis.
 
 ## Technologies
 - **Python**: The core language used for scripting the ETL process.
@@ -61,7 +61,7 @@ pip install mysql-connector-python
 ```
 
 ## Notes
-- Verify the path to `SalesJan2009.csv` in `extract.py`.
+- Verify the path to `SalesJan2009.csv` in `extraction.py`.
 - Modify the cron job according to your requirements.
 - The SQL script for creating the database schema is included within the project.
 ```
