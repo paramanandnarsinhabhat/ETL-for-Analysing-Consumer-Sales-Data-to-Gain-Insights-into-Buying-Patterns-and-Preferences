@@ -45,9 +45,13 @@ To execute the ETL pipeline, follow these steps:
      ```
    - Observe the results of the extraction process.
 
+
 ## Additional Notes
 The `extract.py` script is responsible for the initial phase of the ETL pipeline, where data is extracted and prepared for transformation. Ensure you have the correct path to `SalesJan2009.csv` in your script.
 
+Optimization:
+Created a new module for commonly used files throughput the project.
+This is done for clean code and have common module for reuse.
 ---
 
 Replace `<repository-url>` with the actual URL of your GitHub repository. This `README.md` provides clear instructions for setting up and running the ETL pipeline, along with a description of the project structure and the technologies used.
