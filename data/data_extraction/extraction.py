@@ -1,23 +1,18 @@
 import pandas as pd
+import sys
+import os
 
-def read_csv_file(file_path):
-    """
-    Read the CSV file into a pandas DataFrame.
+# Add the project root to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-    :param file_path: Path to the CSV file
-    :return: Pandas DataFrame containing the CSV data
-    """
-    try:
-        data = pd.read_csv(file_path)
-        print("Data extracted successfully.")
-        return data
-    except Exception as e:
-        print(f"Error occurred: {e}")
+# Now you can import common_utils
+from utilities import common_utils
 
 # Define the path to the CSV file
-csv_file_path = '/Users/paramanandbhat/Downloads/SalesJan2009.csv' 
+csv_file_path = '/Users/paramanandbhat/Downloads/SalesJan2009.csv'
 
 # Call the function to read the data
-sales_data = read_csv_file(csv_file_path)
-#  Display the first few rows of the DataFrame
+sales_data = common_utils.read_csv_file(csv_file_path)
+
+# Display the first few rows of the DataFrame
 print(sales_data.head())
