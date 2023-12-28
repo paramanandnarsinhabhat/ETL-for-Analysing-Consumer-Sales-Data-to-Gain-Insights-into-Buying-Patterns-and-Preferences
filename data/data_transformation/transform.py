@@ -54,3 +54,10 @@ def transform_data(df):
 
 df_transformed = transform_data(sales_data)
 print(df_transformed.head())
+output_file_path = '/Users/paramanandbhat/Downloads/transformed_sales_data.csv'
+
+# Export the transformed DataFrame to a CSV file
+df_transformed.to_csv(output_file_path, index=False)
+
+# Displaying the path to the CSV file after saving
+output_file_path
