@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from utilities import common_utils
 from data.data_extraction.extraction import extract
 from data.data_transformation.transform import transform_data
-from data.data_loading.load import load
+from data.data_loading.load import load_data_to_db
 
 csv_file_path = '/Users/paramanandbhat/Downloads/SalesJan2009.csv'
 
@@ -18,10 +18,12 @@ def run_etl():
     # Extract
     extracted_data = extract(csv_file_path)
 
-# Transform
+    # Transform
     transformed_data = transform_data(extracted_data)
 
-    
+    # Load
+    load_data_to_db(transformed_data)
+
 
 
 run_etl()
